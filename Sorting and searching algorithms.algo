@@ -10,9 +10,9 @@ BEGIN
         j:=j-1
            WHILE (j >= 0 && T1[j] >k) DO
            T1[j+1] = T1[j];
-            j--;
-        T1[j +1] = k;
+            j=j-1;
         END_WHILE
+                T1[j +1] = k;
     END_FOR
     Write('sorting' T1) 
 END
